@@ -3,8 +3,11 @@ package com.neusoft.wuyemis.baseinfo.model;
 import java.math.BigDecimal;
 import java.util.List;
 
+import org.apache.ibatis.type.Alias;
+
 import lombok.Data;
 //小区表
+@Alias("Area")
 @Data
 public class AreaModel {
 	private int AREANO = 0;		//小区编号
